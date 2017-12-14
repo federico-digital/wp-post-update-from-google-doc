@@ -1,6 +1,7 @@
 # WordPress post update from Google Doc
 Update a WordPress post content from a Google document body using the JDBC service.
 
+
 1. Open a new <a href="https://docs.google.com/document/">Google document</a>
 2. Click on 'Tools > Script editor'
 3. Copy the code in this repository in new scripts files inside your new App Script project
@@ -9,5 +10,6 @@ Update a WordPress post content from a Google document body using the JDBC servi
 6. Save all files in the App Script project and close it
 7. Refresh the document page, update its content and click on the menu to 'WordPress > Update post content'
 8. Your WordPress post content will be automatically updated with the content of your Google document!
+
 
 Note: The script will automatically append & remove html tags to your document, in order to transfer formatting styles, lists and links.
