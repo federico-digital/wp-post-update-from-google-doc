@@ -10,6 +10,7 @@ var bold4 = [];
 var bold5 = [];
 var bold6 = [];
 
+// Retrieve the exact indices where links are, and save it in arrays together with the links URLs 
   for (var i = 0; i < idc.length; i++) {
     if (text.getLinkUrl(idc[i]) != null) {
        bold.push(idc[i]);
@@ -20,9 +21,8 @@ var bold6 = [];
        bold5.push(sum);
     } 
   }
-  
-  Logger.log(bold5);
 
+// Insert HTML for links
   text.insertText(bold[0], "<a href=''" + bold3[0] + "''>");
   text.insertText(bold2[0]+13+bold3[0].length, "</a>");
   
@@ -38,10 +38,4 @@ var bold6 = [];
     }
   }
   
-  Logger.log(bold);
-  Logger.log(bold2);
-  Logger.log(bold3);
-  Logger.log(bold4);
-  Logger.log(bold5);     
-
 }
